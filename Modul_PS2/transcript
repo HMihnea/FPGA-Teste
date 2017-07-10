@@ -1,0 +1,478 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/Users/Horbuli/Documents/GitHub/FPGA-Teste/Modul_PS2/Modul_PS2.v
+# Loading project Modul_SPI
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Error opening C:/Users/Horbuli/Desktop/Modul_SPI_TEST/(vlog-13069) C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v
+# Path name 'C:/Users/Horbuli/Desktop/Modul_SPI_TEST/(vlog-13069) C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v' doesn't exist.
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 21:30:35 on Jul 08,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+# ** Warning: (vsim-3015) C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(21): [PCDPC] - Port size (8) does not match connection size (1) for port 'clk_div'. The port definition is at: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TEST/SPI0 File: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v
+# ** Error (suppressible): (vsim-3053) C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(21): Illegal output or inout port connection for port 'SS'.
+#    Time: 0 ps  Iteration: 0  Instance: /TEST/SPI0 File: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v
+# Error loading design
+# End time: 21:30:35 on Jul 08,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 21:31:00 on Jul 08,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+# ** Warning: (vsim-3015) C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(21): [PCDPC] - Port size (8) does not match connection size (1) for port 'clk_div'. The port definition is at: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TEST/SPI0 File: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v
+# ** Error (suppressible): (vsim-3053) C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(21): Illegal output or inout port connection for port 'SS'.
+#    Time: 0 ps  Iteration: 0  Instance: /TEST/SPI0 File: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v
+# Error loading design
+# End time: 21:31:00 on Jul 08,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 21:37:41 on Jul 08,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+# ** Warning: (vsim-3015) C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(21): [PCDPC] - Port size (8) does not match connection size (1) for port 'clk_div'. The port definition is at: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TEST/SPI0 File: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v
+add wave -position insertpoint  \
+sim:/TEST/clk \
+sim:/TEST/clk_div \
+sim:/TEST/rst \
+sim:/TEST/en \
+sim:/TEST/cpol \
+sim:/TEST/cph \
+sim:/TEST/rx_data \
+sim:/TEST/tx_data \
+sim:/TEST/ss \
+sim:/TEST/miso \
+sim:/TEST/sck \
+sim:/TEST/mosi \
+sim:/TEST/busy
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 21:46:32 on Jul 08,2017, Elapsed time: 0:08:51
+# Errors: 0, Warnings: 1
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 21:46:51 on Jul 08,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+# ** Warning: (vsim-3015) C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(21): [PCDPC] - Port size (8) does not match connection size (1) for port 'clk_div'. The port definition is at: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TEST/SPI0 File: C:/Users/Horbuli/Desktop/Modul_SPI_TEST/Modul_SPI.v
+quit -sim
+# End time: 21:47:01 on Jul 08,2017, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 1
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 21:48:09 on Jul 08,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/clk \
+sim:/TEST/clk_div \
+sim:/TEST/rst \
+sim:/TEST/en \
+sim:/TEST/cpol \
+sim:/TEST/cph \
+sim:/TEST/rx_data \
+sim:/TEST/tx_data \
+sim:/TEST/ss \
+sim:/TEST/miso \
+sim:/TEST/sck \
+sim:/TEST/mosi \
+sim:/TEST/busy
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 00:43:32 on Jul 09,2017, Elapsed time: 2:55:23
+# Errors: 0, Warnings: 0
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 00:43:42 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/TEST/clk \
+sim:/TEST/clk_div \
+sim:/TEST/rst \
+sim:/TEST/en \
+sim:/TEST/cpol \
+sim:/TEST/cph \
+sim:/TEST/rx_data \
+sim:/TEST/tx_data \
+sim:/TEST/ss \
+sim:/TEST/miso \
+sim:/TEST/sck \
+sim:/TEST/mosi \
+sim:/TEST/busy
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 00:47:09 on Jul 09,2017, Elapsed time: 0:03:27
+# Errors: 1, Warnings: 0
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 00:47:16 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/clk \
+sim:/TEST/clk_div \
+sim:/TEST/rst \
+sim:/TEST/en \
+sim:/TEST/cpol \
+sim:/TEST/cph \
+sim:/TEST/rx_data \
+sim:/TEST/tx_data \
+sim:/TEST/ss \
+sim:/TEST/miso \
+sim:/TEST/sck \
+sim:/TEST/mosi \
+sim:/TEST/busy
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 00:48:10 on Jul 09,2017, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 00:48:20 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/clk \
+sim:/TEST/clk_div \
+sim:/TEST/rst \
+sim:/TEST/en \
+sim:/TEST/cpol \
+sim:/TEST/cph \
+sim:/TEST/rx_data \
+sim:/TEST/tx_data \
+sim:/TEST/ss \
+sim:/TEST/miso \
+sim:/TEST/sck \
+sim:/TEST/mosi \
+sim:/TEST/busy
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 00:49:30 on Jul 09,2017, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 0
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 00:49:35 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/clk \
+sim:/TEST/clk_div \
+sim:/TEST/rst \
+sim:/TEST/en \
+sim:/TEST/cpol \
+sim:/TEST/cph \
+sim:/TEST/rx_data \
+sim:/TEST/tx_data \
+sim:/TEST/ss \
+sim:/TEST/miso \
+sim:/TEST/sck \
+sim:/TEST/mosi \
+sim:/TEST/busy
+add wave -position insertpoint  \
+sim:/TEST/SPI0/clk0/clk_m \
+sim:/TEST/SPI0/clk0/en \
+sim:/TEST/SPI0/clk0/CPOL \
+sim:/TEST/SPI0/clk0/clk_div \
+sim:/TEST/SPI0/clk0/clk_SPI \
+sim:/TEST/SPI0/clk0/num
+add wave -position insertpoint  \
+sim:/TEST/SPI0/stare
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 00:51:46 on Jul 09,2017, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 0
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 00:51:56 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/SPI0/clk0/clk_m \
+sim:/TEST/SPI0/clk0/en \
+sim:/TEST/SPI0/clk0/CPOL \
+sim:/TEST/SPI0/clk0/clk_div \
+sim:/TEST/SPI0/clk0/clk_SPI \
+sim:/TEST/SPI0/clk0/num
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 00:53:25 on Jul 09,2017, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 00:53:32 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/SPI0/clk0/clk_m \
+sim:/TEST/SPI0/clk0/en \
+sim:/TEST/SPI0/clk0/CPOL \
+sim:/TEST/SPI0/clk0/clk_div \
+sim:/TEST/SPI0/clk0/clk_SPI \
+sim:/TEST/SPI0/clk0/num
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 00:54:06 on Jul 09,2017, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 0
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 00:54:09 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/clk \
+sim:/TEST/clk_div \
+sim:/TEST/rst \
+sim:/TEST/en \
+sim:/TEST/cpol \
+sim:/TEST/cph \
+sim:/TEST/rx_data \
+sim:/TEST/tx_data \
+sim:/TEST/ss \
+sim:/TEST/miso \
+sim:/TEST/sck \
+sim:/TEST/mosi \
+sim:/TEST/busy
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 00:55:38 on Jul 09,2017, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 00:55:41 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/SPI0/clk0/clk_m \
+sim:/TEST/SPI0/clk0/en \
+sim:/TEST/SPI0/clk0/CPOL \
+sim:/TEST/SPI0/clk0/clk_div \
+sim:/TEST/SPI0/clk0/clk_SPI \
+sim:/TEST/SPI0/clk0/num
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 00:58:19 on Jul 09,2017, Elapsed time: 0:02:38
+# Errors: 0, Warnings: 0
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 00:58:28 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/SPI0/clk0/clk_m \
+sim:/TEST/SPI0/clk0/en \
+sim:/TEST/SPI0/clk0/CPOL \
+sim:/TEST/SPI0/clk0/clk_div \
+sim:/TEST/SPI0/clk0/clk_SPI \
+sim:/TEST/SPI0/clk0/num
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 01:00:45 on Jul 09,2017, Elapsed time: 0:02:17
+# Errors: 0, Warnings: 0
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 01:00:58 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/clk \
+sim:/TEST/clk_div \
+sim:/TEST/rst \
+sim:/TEST/en \
+sim:/TEST/cpol \
+sim:/TEST/cph \
+sim:/TEST/rx_data \
+sim:/TEST/tx_data \
+sim:/TEST/ss \
+sim:/TEST/miso \
+sim:/TEST/sck \
+sim:/TEST/mosi \
+sim:/TEST/busy
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 01:01:23 on Jul 09,2017, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 01:01:28 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/SPI0/clk0/clk_m \
+sim:/TEST/SPI0/clk0/en \
+sim:/TEST/SPI0/clk0/CPOL \
+sim:/TEST/SPI0/clk0/clk_div \
+sim:/TEST/SPI0/clk0/clk_SPI \
+sim:/TEST/SPI0/clk0/num
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2100 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+quit -sim
+# End time: 01:02:55 on Jul 09,2017, Elapsed time: 0:01:27
+# Errors: 0, Warnings: 0
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 01:03:03 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/SPI0/clk0/clk_m \
+sim:/TEST/SPI0/clk0/en \
+sim:/TEST/SPI0/clk0/CPOL \
+sim:/TEST/SPI0/clk0/clk_div \
+sim:/TEST/SPI0/clk0/clk_SPI \
+sim:/TEST/SPI0/clk0/num
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2080 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+quit -sim
+# End time: 01:04:42 on Jul 09,2017, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 0
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 01:04:46 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/SPI0/clk0/clk_m \
+sim:/TEST/SPI0/clk0/en \
+sim:/TEST/SPI0/clk0/CPOL \
+sim:/TEST/SPI0/clk0/clk_div \
+sim:/TEST/SPI0/clk0/clk_SPI \
+sim:/TEST/SPI0/clk0/num
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2080 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+# Compile of Modul_SPI.v was successful.
+# Compile of TEST.v was successful.
+# 2 compiles, 0 failed with no errors.
+quit -sim
+# End time: 01:05:45 on Jul 09,2017, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0
+vsim work.TEST
+# vsim work.TEST 
+# Start time: 01:05:49 on Jul 09,2017
+# Loading work.TEST
+# Loading work.Modul_SPI
+# Loading work.CLOCK
+add wave -position insertpoint  \
+sim:/TEST/SPI0/clk0/clk_m \
+sim:/TEST/SPI0/clk0/en \
+sim:/TEST/SPI0/clk0/CPOL \
+sim:/TEST/SPI0/clk0/clk_div \
+sim:/TEST/SPI0/clk0/clk_SPI \
+sim:/TEST/SPI0/clk0/num
+run -all
+# ** Note: $stop    : C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v(42)
+#    Time: 2080 ps  Iteration: 0  Instance: /TEST
+# Break in Module TEST at C:/Users/Horbuli/Desktop/Modul_SPI_TEST/TEST.v line 42
+# End time: 01:07:54 on Jul 09,2017, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 0
