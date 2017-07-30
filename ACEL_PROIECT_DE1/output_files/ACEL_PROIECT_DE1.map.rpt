@@ -1,0 +1,566 @@
+Analysis & Synthesis report for ACEL_PROIECT_DE1
+Sun Jul 30 15:21:57 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |ACEL_PROIECT_DE1|PS2:comb_40|stare
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: VGA_50MHZ:VGA|Counter:SYNK
+ 13. Parameter Settings for User Entity Instance: VGA_50MHZ:VGA|H_Synk:H
+ 14. Parameter Settings for User Entity Instance: VGA_50MHZ:VGA|V_Synk:V
+ 15. Parameter Settings for User Entity Instance: VGA_CONTROL:VGA_C
+ 16. Parameter Settings for User Entity Instance: PS2:comb_40
+ 17. Port Connectivity Checks: "PS2:comb_40"
+ 18. Port Connectivity Checks: "VGA_CONTROL:VGA_C"
+ 19. Port Connectivity Checks: "VGA_50MHZ:VGA|V_Synk:V"
+ 20. Port Connectivity Checks: "VGA_50MHZ:VGA|H_Synk:H"
+ 21. Port Connectivity Checks: "VGA_50MHZ:VGA|Counter:SYNK"
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+ 24. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Jul 30 15:21:57 2017      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; ACEL_PROIECT_DE1                           ;
+; Top-level Entity Name              ; ACEL_PROIECT_DE1                           ;
+; Family                             ; Cyclone II                                 ;
+; Total logic elements               ; 2,285                                      ;
+;     Total combinational functions  ; 2,251                                      ;
+;     Dedicated logic registers      ; 104                                        ;
+; Total registers                    ; 104                                        ;
+; Total pins                         ; 108                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C20F484C7       ;                    ;
+; Top-level entity name                                                      ; ACEL_PROIECT_DE1   ; ACEL_PROIECT_DE1   ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                      ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
+; ACEL_PROIECT_DE1.v               ; yes             ; User Verilog HDL File  ; C:/Users/Horbuli/Documents/FPGA/ACEL_PROIECT_DE1/ACEL_PROIECT_DE1.v ;         ;
+; VGA_50MHZ.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Horbuli/Documents/FPGA/ACEL_PROIECT_DE1/VGA_50MHZ.v        ;         ;
+; VGA_CONTROLv.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Horbuli/Documents/FPGA/ACEL_PROIECT_DE1/VGA_CONTROLv.v     ;         ;
+; SEC.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Horbuli/Documents/FPGA/ACEL_PROIECT_DE1/SEC.v              ;         ;
+; TRANSCODOR.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Horbuli/Documents/FPGA/ACEL_PROIECT_DE1/TRANSCODOR.v       ;         ;
+; PS2.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Horbuli/Documents/FPGA/ACEL_PROIECT_DE1/PS2.v              ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                          ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimated Total logic elements              ; 2,285                  ;
+;                                             ;                        ;
+; Total combinational functions               ; 2251                   ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 939                    ;
+;     -- 3 input functions                    ; 98                     ;
+;     -- <=2 input functions                  ; 1214                   ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 1177                   ;
+;     -- arithmetic mode                      ; 1074                   ;
+;                                             ;                        ;
+; Total registers                             ; 104                    ;
+;     -- Dedicated logic registers            ; 104                    ;
+;     -- I/O registers                        ; 0                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 108                    ;
+; Embedded Multiplier 9-bit elements          ; 0                      ;
+; Maximum fan-out node                        ; VGA_50MHZ:VGA|x_pos[4] ;
+; Maximum fan-out                             ; 91                     ;
+; Total fan-out                               ; 6722                   ;
+; Average fan-out                             ; 2.73                   ;
++---------------------------------------------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                  ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
+; |ACEL_PROIECT_DE1          ; 2251 (10)         ; 104 (16)     ; 0           ; 0            ; 0       ; 0         ; 108  ; 0            ; |ACEL_PROIECT_DE1                            ;              ;
+;    |PS2:comb_40|           ; 13 (13)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|PS2:comb_40                ;              ;
+;    |SEC:s0|                ; 55 (55)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|SEC:s0                     ;              ;
+;    |TRANSCODOR:tr0|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|TRANSCODOR:tr0             ;              ;
+;    |TRANSCODOR:tr1|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|TRANSCODOR:tr1             ;              ;
+;    |TRANSCODOR:tr2|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|TRANSCODOR:tr2             ;              ;
+;    |TRANSCODOR:tr3|        ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|TRANSCODOR:tr3             ;              ;
+;    |VGA_50MHZ:VGA|         ; 51 (7)            ; 41 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|VGA_50MHZ:VGA              ;              ;
+;       |Counter:SYNK|       ; 37 (37)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|VGA_50MHZ:VGA|Counter:SYNK ;              ;
+;       |H_Synk:H|           ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|VGA_50MHZ:VGA|H_Synk:H     ;              ;
+;       |V_Synk:V|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|VGA_50MHZ:VGA|V_Synk:V     ;              ;
+;    |VGA_CONTROL:VGA_C|     ; 2094 (2094)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ACEL_PROIECT_DE1|VGA_CONTROL:VGA_C          ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------+
+; State Machine - |ACEL_PROIECT_DE1|PS2:comb_40|stare      ;
++---------------+------------+-------------+---------------+
+; Name          ; stare.idle ; stare.reset ; stare.running ;
++---------------+------------+-------------+---------------+
+; stare.idle    ; 0          ; 0           ; 0             ;
+; stare.running ; 1          ; 0           ; 1             ;
+; stare.reset   ; 1          ; 1           ; 0             ;
++---------------+------------+-------------+---------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++---------------------------------------+-------------------------------------------------+
+; Register name                         ; Reason for Removal                              ;
++---------------------------------------+-------------------------------------------------+
+; VGA_50MHZ:VGA|x_pos[9]                ; Stuck at GND due to stuck port data_in          ;
+; VGA_50MHZ:VGA|y_pos[9]                ; Stuck at GND due to stuck port data_in          ;
+; PS2:comb_40|stare~7                   ; Lost fanout                                     ;
+; SEC:s0|cnt[0]                         ; Merged with VGA_50MHZ:VGA|Counter:SYNK|pixel[0] ;
+; Total Number of Removed Registers = 4 ;                                                 ;
++---------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 104   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ACEL_PROIECT_DE1|counter2[1]                        ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |ACEL_PROIECT_DE1|PS2:comb_40|Selector2              ;
+; 85:1               ; 9 bits    ; 504 LEs       ; 315 LEs              ; 189 LEs                ; No         ; |ACEL_PROIECT_DE1|VGA_CONTROL:VGA_C|adresa_pixel[8]  ;
+; 86:1               ; 8 bits    ; 456 LEs       ; 296 LEs              ; 160 LEs                ; No         ; |ACEL_PROIECT_DE1|VGA_CONTROL:VGA_C|adresa_pixel[17] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA_50MHZ:VGA|Counter:SYNK ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; limit_h        ; 1039  ; Signed Integer                                 ;
+; limit_v        ; 665   ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA_50MHZ:VGA|H_Synk:H ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; h_synk_begin   ; 855   ; Signed Integer                             ;
+; h_synk_end     ; 975   ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA_50MHZ:VGA|V_Synk:V ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; v_synk_begin   ; 636   ; Signed Integer                             ;
+; v_synk_end     ; 641   ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA_CONTROL:VGA_C ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; offset_x       ; 0     ; Signed Integer                        ;
+; offset_y       ; 58    ; Signed Integer                        ;
+; offset_y_sw    ; 56    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PS2:comb_40 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; running        ; 1     ; Signed Integer                  ;
+; idle           ; 0     ; Signed Integer                  ;
+; reset          ; 2     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PS2:comb_40"                                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; data_valid ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_CONTROL:VGA_C"                                                                                                                                                      ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                               ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; clk_50 ; Input  ; Info     ; Explicitly unconnected                                                                                                                                                ;
+; red    ; Output ; Warning  ; Output or bidir port (3 bits) is smaller than the port expression (4 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
+; green  ; Output ; Warning  ; Output or bidir port (3 bits) is smaller than the port expression (4 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
+; blue   ; Output ; Warning  ; Output or bidir port (3 bits) is smaller than the port expression (4 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_50MHZ:VGA|V_Synk:V"                                                                                                                                                                 ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; count_line ; Input ; Warning  ; Input port expression (12 bits) is wider than the input port (11 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_50MHZ:VGA|H_Synk:H"                                                                                                                                                                  ;
++-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; count_pixel ; Input ; Warning  ; Input port expression (12 bits) is wider than the input port (11 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_50MHZ:VGA|Counter:SYNK"                                                                                                                                              ;
++-------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                                                 ;
++-------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pixel ; Output ; Warning  ; Output or bidir port (11 bits) is smaller than the port expression (12 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
+; linie ; Output ; Warning  ; Output or bidir port (11 bits) is smaller than the port expression (12 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++-------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:07     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Sun Jul 30 15:21:48 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ACEL_PROIECT_DE1 -c ACEL_PROIECT_DE1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file acel_proiect_de1.v
+    Info (12023): Found entity 1: ACEL_PROIECT_DE1
+Info (12021): Found 4 design units, including 4 entities, in source file vga_50mhz.v
+    Info (12023): Found entity 1: VGA_50MHZ
+    Info (12023): Found entity 2: Counter
+    Info (12023): Found entity 3: H_Synk
+    Info (12023): Found entity 4: V_Synk
+Info (12021): Found 1 design units, including 1 entities, in source file vga_controlv.v
+    Info (12023): Found entity 1: VGA_CONTROL
+Info (12021): Found 1 design units, including 1 entities, in source file sec.v
+    Info (12023): Found entity 1: SEC
+Info (12021): Found 1 design units, including 1 entities, in source file transcodor.v
+    Info (12023): Found entity 1: TRANSCODOR
+Info (12021): Found 1 design units, including 1 entities, in source file ps2.v
+    Info (12023): Found entity 1: PS2
+Warning (10236): Verilog HDL Implicit Net warning at VGA_CONTROLv.v(65): created implicit net for "cs0"
+Critical Warning (10846): Verilog HDL Instantiation warning at ACEL_PROIECT_DE1.v(88): instance has no name
+Info (12127): Elaborating entity "ACEL_PROIECT_DE1" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at ACEL_PROIECT_DE1.v(64): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at ACEL_PROIECT_DE1.v(69): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "SEC" for hierarchy "SEC:s0"
+Info (12128): Elaborating entity "VGA_50MHZ" for hierarchy "VGA_50MHZ:VGA"
+Warning (10230): Verilog HDL assignment warning at VGA_50MHZ.v(22): truncated value with size 12 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at VGA_50MHZ.v(23): truncated value with size 12 to match size of target (10)
+Info (12128): Elaborating entity "Counter" for hierarchy "VGA_50MHZ:VGA|Counter:SYNK"
+Warning (10230): Verilog HDL assignment warning at VGA_50MHZ.v(49): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at VGA_50MHZ.v(53): truncated value with size 32 to match size of target (11)
+Info (12128): Elaborating entity "H_Synk" for hierarchy "VGA_50MHZ:VGA|H_Synk:H"
+Info (12128): Elaborating entity "V_Synk" for hierarchy "VGA_50MHZ:VGA|V_Synk:V"
+Info (12128): Elaborating entity "VGA_CONTROL" for hierarchy "VGA_CONTROL:VGA_C"
+Warning (10036): Verilog HDL or VHDL warning at VGA_CONTROLv.v(65): object "cs0" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(77): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(82): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(87): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(92): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(99): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(105): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(111): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(117): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(123): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(129): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(135): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(141): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(147): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(153): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(161): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(167): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(173): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(179): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(185): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(191): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(197): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(203): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(212): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(218): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(224): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(230): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(236): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(242): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(248): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(254): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(260): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(266): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(274): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(279): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(284): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(289): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(294): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(299): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(304): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(309): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(314): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(319): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(326): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(331): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(336): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(342): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(347): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(352): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(357): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(362): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(367): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(372): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(380): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(385): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(390): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(396): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(401): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(406): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(411): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(416): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(421): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(426): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(432): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(438): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(444): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(450): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(456): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(462): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(470): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(475): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(481): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(487): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(492): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(497): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(502): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(507): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(512): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(517): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(523): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(529): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(535): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(541): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(547): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(553): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at VGA_CONTROLv.v(562): truncated value with size 32 to match size of target (18)
+Warning (10034): Output port "cs" at VGA_CONTROLv.v(47) has no driver
+Info (12128): Elaborating entity "TRANSCODOR" for hierarchy "TRANSCODOR:tr0"
+Info (12128): Elaborating entity "PS2" for hierarchy "PS2:comb_40"
+Warning (10230): Verilog HDL assignment warning at PS2.v(80): truncated value with size 32 to match size of target (4)
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "VGA_50MHZ:VGA|pixel[11]" is missing source, defaulting to GND
+    Warning (12110): Net "VGA_50MHZ:VGA|line[11]" is missing source, defaulting to GND
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "red[2]" is stuck at GND
+    Warning (13410): Pin "red[3]" is stuck at GND
+    Warning (13410): Pin "green[3]" is stuck at GND
+    Warning (13410): Pin "blue[3]" is stuck at GND
+    Warning (13410): Pin "cs" is stuck at GND
+    Warning (13410): Pin "oe" is stuck at GND
+    Warning (13410): Pin "we" is stuck at VCC
+    Warning (13410): Pin "mask0" is stuck at GND
+    Warning (13410): Pin "mask1" is stuck at GND
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Horbuli/Documents/FPGA/ACEL_PROIECT_DE1/output_files/ACEL_PROIECT_DE1.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 2393 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 25 input pins
+    Info (21059): Implemented 83 output pins
+    Info (21061): Implemented 2285 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 111 warnings
+    Info: Peak virtual memory: 492 megabytes
+    Info: Processing ended: Sun Jul 30 15:21:57 2017
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Horbuli/Documents/FPGA/ACEL_PROIECT_DE1/output_files/ACEL_PROIECT_DE1.map.smsg.
+
+
